@@ -7,6 +7,8 @@ A collection of tools to manage the CTO sandbox environment. All dependencies sh
 * [AWS CLI](https://aws.amazon.com/cli/)
 * [Homebrew](https://brew.sh)
 
+You can also use [direnv](https://github.com/direnv/direnv) to help manage environment variables. See `.envrc.example` for an example `.envrc` file.
+
 ## admin-hostname
 
 Get the current address for the octo-admin instance.
@@ -27,7 +29,7 @@ SSH to the octo-admin instance, whatever its current address may be.
 
 ### Usage
 
-First, set the `OCTO_ADMIN_USERNAME` environment variable to your username. See `.envrc.example` for an example using [direnv](https://github.com/direnv/direnv).
+First set the `OCTO_ADMIN_USERNAME` environment variable to your username, then:
 
 ```
 admin-ssh.sh
